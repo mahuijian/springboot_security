@@ -14,6 +14,11 @@ public class ResponseObject<T> {
     public ResponseObject() {
     }
 
+    public ResponseObject(Integer status, String message) {
+        this.data = data;
+        this.message = message;
+    }
+
     public ResponseObject(Integer status, T data) {
         this.data = data;
         this.status = status;
@@ -23,6 +28,10 @@ public class ResponseObject<T> {
         this.data = data;
         this.message = message;
         this.status = status;
+    }
+
+    public static <S> ResponseObject<S> success() {
+        return new ResponseObject<>(SUCCESS, "success");
     }
 
     public static <S> ResponseObject<S> success(S data) {

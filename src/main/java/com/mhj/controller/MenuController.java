@@ -23,6 +23,6 @@ public class MenuController {
 
     @GetMapping("/getMenus")
     public ResponseObject<List<Menu>> getMenus() {
-        return ResponseObject.success(menuService.findAll());
+        return ResponseObject.success(menuService.findAllMenu());
     }
 }

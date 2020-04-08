@@ -20,7 +20,7 @@ public class MenuServiceImpl implements MenuService {
     private MenuDao menuDao;
 
     @Override
-    public List<Menu> findAll() {
+    public List<Menu> findAllMenu() {
         List<Menu> menus = menuDao.findAll();
         if (menus.size() == 0) {
             return new ArrayList<>();
