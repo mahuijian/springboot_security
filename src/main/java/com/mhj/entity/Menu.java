@@ -21,5 +21,7 @@ public class Menu {
 
     private Integer state;
 
+    private Integer isDeleted;
+
 
 }
