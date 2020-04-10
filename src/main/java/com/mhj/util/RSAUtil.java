@@ -1,4 +1,4 @@
-package com.mhj.controller;
+package com.mhj.util;
 
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
@@ -22,9 +22,9 @@ import java.util.Map;
  * @author mahuijian
  * @since 2020/4/9 15:51
  */
-public class Demo1 {
+public class RSAUtil {
 
-    private static Logger logger = LoggerFactory.getLogger(Demo1.class);
+    private static Logger logger = LoggerFactory.getLogger(RSAUtil.class);
 
 
     private static Map<Integer, String> keyMap = new HashMap<>();
